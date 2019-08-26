@@ -2,22 +2,31 @@
 <html lang="zh">
   <head>
     <meta charset="UTF-8"/>
-    <title>Document</title>
+    <title>聯絡我們</title>
   </head>
-  <body></body>
-</html>
-<form>
-  <div id="box">聯絡我們</div>
-  <div id="content">
-    <label for="name"></label>
-    <input type="text" id="name" placeholder="姓名" required="required"/>
-    <label for="mail"></label>
-    <input type="mail" id="mail" placeholder="Email" required="required"/>
-    <label for="cellphone"></label>
-    <input type="cellphone" id="cellphone" placeholder="手機" required="required"/>
-    <label for="phone"></label>
-    <input type="phone" id="phone" placeholder="電話" required="required"/>
-    <label for="content"></label>
-    <input type="content" id="content" placeholder="內容" required="required"/>
-  </div>
-</form>
+  <body>
+  </body>
+
+
+  <form action="#" method="get" oninput="total.value=parseInt(car.value)+parseInt(equipment.value)">
+    <fieldset>
+    <div style="text-align:center;">
+      <h2>聯絡我們</h2>
+      <hr>
+      <p>致力提供更多不同的購物經驗，我們很重視會員在網站上的任何意見。
+請您填妥以下表格並送出，我們會以最迅速時間回覆您的詢問！</p>
+      </div>
+    <label for="name">姓名：</label>
+    <input type="text" id="name" placeholder="您的姓名" required>
+    <label for="email">Email：</label>
+    <input type="email" id="email" placeholder="您的Email" required>
+    <label for="phone">電話：</label>
+    <input type="phone" id="phone" placeholder="您的電話" required>
+    <label for="message">留言：</label>
+    <textarea rows="5" cols="30" id="message" placeholder="詢問內容"required></textarea>
+    </fieldset>
+    <div id="button">
+      <input type="reset" value="重新輸入"class="btn">
+      <input type="submit" value="確認送出"class="btn">
+    </div>
+  </form>

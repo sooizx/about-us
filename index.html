@@ -2,31 +2,38 @@
 <html lang="zh">
   <head>
     <meta charset="UTF-8"/>
-    <title>聯絡我們</title>
+    <title>日子選物</title>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-  </body>
-
-
-  <form action="#" method="get" oninput="total.value=parseInt(car.value)+parseInt(equipment.value)">
-    <fieldset>
-    <div style="text-align:center;">
+    <div id="button"><a href="#">購物車</a><a href="#">會員登入</a></div>
+    <div id="nav">
+      <nav><a href="index.html"><img class="logo" src="imgs/logo.png" alt="日子選物logo"/></a>
+        <div class="link"><a href="#">最新商品</a><a href="#">文具用品</a><a href="#">生活收納</a><a href="#">美妝保養</a><a href="#">品牌總覽</a></div>
+      </nav>
+    <div class="contactus">
       <h2>聯絡我們</h2>
-      <hr>
-      <p>致力提供更多不同的購物經驗，我們很重視會員在網站上的任何意見。
-請您填妥以下表格並送出，我們會以最迅速時間回覆您的詢問！</p>
-      </div>
-    <label for="name">姓名：</label>
-    <input type="text" id="name" placeholder="您的姓名" required>
-    <label for="email">Email：</label>
-    <input type="email" id="email" placeholder="您的Email" required>
-    <label for="phone">電話：</label>
-    <input type="phone" id="phone" placeholder="您的電話" required>
-    <label for="message">留言：</label>
-    <textarea rows="5" cols="30" id="message" placeholder="詢問內容"required></textarea>
+        <hr>
+        <p>為了能快速解決您的問題，建議您先瀏覽FAQ常見問題，若你的問題能無法解決，歡迎您來信或致電至客服中心，我們將竭誠為您服務！</p>
+    </div>
+    
+    <footer>2019 © 日子選物. ALL RIGHTS RESERVED.</footer>
+  </body>
+  <form>
+    <fieldset>
+      <label for="name">姓名：</label>
+      <input type="text" id="name" placeholder="您的姓名" required>
+      <label for="phone">電話：</label>
+      <input type="email" id="phone" placeholder="您的電話" required>
+      <label for="email">Email：</label>
+      <input type="email" id="email" placeholder="您的Email" required>
+      <label for="message">內容：</label>
+      <textarea rows="5" cols="30" id="message" placeholder="輸入詢問內容"required></textarea>
     </fieldset>
-    <div id="button">
+    <div id="button1">
       <input type="reset" value="重新輸入"class="btn">
       <input type="submit" value="確認送出"class="btn">
     </div>
   </form>
+
+</html>
